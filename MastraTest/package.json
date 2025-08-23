@@ -1,0 +1,7 @@
+{
+  "name": "mastra-test",
+  "version": "1.0.0",
+  "main": "src/mastra/index.ts",
+  "type": "module",
+  "license": "MIT"
+}
