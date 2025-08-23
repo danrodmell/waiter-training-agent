@@ -1,0 +1,57 @@
+# Waiter Training Agent Configuration Example
+# Copy this file to config.yaml and fill in your values
+
+# Agent Settings
+agent:
+  name: "Waiter Training Assistant"
+  version: "1.0.0"
+  description: "AI-powered waiter training chatbot"
+  
+# Training Configuration
+training:
+  difficulty_levels:
+    - beginner
+    - intermediate
+    - advanced
+  
+  scenario_categories:
+    - customer_greeting
+    - menu_knowledge
+    - order_taking
+    - upselling
+    - problem_resolution
+    - service_recovery
+  
+  feedback_preferences:
+    immediate: true
+    detailed: true
+    constructive: true
+
+# AI Model Configuration
+ai:
+  model: "gpt-4"
+  temperature: 0.7
+  max_tokens: 1000
+  openai_api_key: "your_openai_api_key_here"
+  
+# Mastra.ai Integration
+mastra:
+  api_key: "your_mastra_api_key_here"
+  project_id: "your_mastra_project_id_here"
+  environment: "production"
+  
+# Database Configuration
+database:
+  type: "sqlite"
+  path: "data/training_sessions.db"
+  
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/waiter_agent.log"
+  
+# Web Interface
+web:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false 
