@@ -1,0 +1,36 @@
+# Mastra Project Configuration
+# This file identifies this repository as a Mastra project
+
+project_type: agent
+runtime: python
+entry_point: main.py
+requirements_file: requirements.txt
+config_file: mastra.config.ts
+
+# Agent Configuration
+agent:
+  name: "Waiter Training Agent"
+  type: "training"
+  model: "gpt-4"
+  
+# Training Configuration
+training:
+  categories:
+    - customer_greeting
+    - menu_knowledge
+    - order_taking
+    - upselling
+    - problem_resolution
+    - service_recovery
+  
+  difficulty_levels:
+    - beginner
+    - intermediate
+    - advanced
+
+# Environment Variables
+environment:
+  required:
+    - OPENAI_API_KEY
+    - MASTRA_API_KEY
+    - MASTRA_PROJECT_ID

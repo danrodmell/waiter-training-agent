@@ -1,0 +1,48 @@
+{
+  "mastra": {
+    "version": "1.0.0",
+    "projectType": "agent",
+    "runtime": "python",
+    "entryPoint": "main.py",
+    "requirementsFile": "requirements.txt",
+    "configFile": "mastra.config.ts"
+  },
+  "project": {
+    "name": "Waiter Training Agent",
+    "description": "AI-powered chatbot for training restaurant waiters",
+    "version": "1.0.0",
+    "author": "Daniel Melendez"
+  },
+  "agent": {
+    "type": "training",
+    "model": "gpt-4",
+    "capabilities": [
+      "interactive_training",
+      "scenario_based_learning",
+      "real_time_feedback",
+      "progress_tracking"
+    ]
+  },
+  "training": {
+    "categories": [
+      "customer_greeting",
+      "menu_knowledge",
+      "order_taking",
+      "upselling",
+      "problem_resolution",
+      "service_recovery"
+    ],
+    "difficultyLevels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ]
+  },
+  "environment": {
+    "required": [
+      "OPENAI_API_KEY",
+      "MASTRA_API_KEY",
+      "MASTRA_PROJECT_ID"
+    ]
+  }
+}
