@@ -1,7 +1,27 @@
 {
-  "name": "mastra-test",
+  "name": "waiter-training-agent-mastra",
   "version": "1.0.0",
+  "description": "AI-powered waiter training agent for Mastra.ai",
   "main": "src/mastra/index.ts",
   "type": "module",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/mastra/index.js"
+  },
+  "dependencies": {
+    "@mastra/core": "^1.0.0",
+    "@mastra/agent": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "mastra": {
+    "projectType": "agent",
+    "runtime": "python",
+    "entryPoint": "main.py",
+    "requirementsFile": "requirements.txt"
+  }
 }
