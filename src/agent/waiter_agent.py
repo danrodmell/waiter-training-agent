@@ -151,7 +151,8 @@ class WaiterTrainingAgent:
         """
         
         try:
-            response = openai.ChatCompletion.create(
+            client = openai.OpenAI(api_key=openai.api_key)
+            response = client.chat.completions.create(
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=self.temperature,
